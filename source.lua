@@ -163,7 +163,7 @@ local tab1 = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 
 
-tab1.Name = "tab1"
+tab1.Name = tabname
 tab1.Parent = tabs
 tab1.Active = false
 tab1.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
