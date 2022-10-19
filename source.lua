@@ -195,6 +195,31 @@ end
 
 
 
+local items = items
+local tabs = tabs
+
+for i,v in pairs(tabs:GetChildren()) do
+	if v.ClassName == "TextButton" then
+		v.MouseButton1Click:Connect(function()
+			for i,v2 in pairs(items:GetChildren()) do
+				if v2.Name ~= v.Name then
+					v2.Visible = false
+				else 
+					v2.Visible = true
+				end
+			end
+			for i,v2 in pairs(tabs:GetChildren()) do
+				if v2.ClassName == "TextButton" then
+				if v2.Name ~= v.Name then
+					game:GetService("TweenService"):Create(v2,TweenInfo.new(0.5), {TextColor3 = Color3.fromRGB(98, 99, 104)}):Play()
+				else
+						game:GetService("TweenService"):Create(v2,TweenInfo.new(0.5), {TextColor3 = Color3.fromRGB(255,255,255)}):Play()
+					end
+				end
+			end
+		end)
+	end
+end
 
 
 
