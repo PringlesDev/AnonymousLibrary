@@ -25,7 +25,7 @@ local line_2 = Instance.new("Frame")
 local cornerhide1 = Instance.new("Frame")
 local cornerhide2 = Instance.new("Frame")
 local tabUIPadding = Instance.new("UIPadding")
-
+local items = Instance.new("ScrollingFrame")
 
 
 
@@ -41,6 +41,21 @@ mainFrame.ClipsDescendants = true
 mainFrame.Position = UDim2.new(0.019399999, 0, 0.039895732, 0)
 mainFrame.Size = UDim2.new(0, 304, 0, 225)
 
+items.Name = "items"
+items.Parent = mainFrame
+items.AnchorPoint = Vector2.new(1, 1)
+items.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+items.BackgroundTransparency = 1.000
+items.BorderColor3 = Color3.fromRGB(27, 42, 53)
+items.BorderSizePixel = 0
+items.Position = UDim2.new(1, -6, 1, -6)
+items.Selectable = false
+items.Size = UDim2.new(1, -100, 1, -39)
+items.ScrollBarThickness = 0	
+	
+	
+	
+	
 topBarFrame.Name = "topBarFrame"
 topBarFrame.Parent = mainFrame
 topBarFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
@@ -125,6 +140,10 @@ tabs.BackgroundTransparency = 1.000
 tabs.Position = UDim2.new(1, -3, 1, -3)
 tabs.Size = UDim2.new(1, -6, 1, -6)
 
+	
+	
+	
+	
 UIListLayout.Parent = tabs
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0, 4)
