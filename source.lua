@@ -214,8 +214,8 @@ end
 
 
 
-local items = items
-local tabs = tabs
+
+
 
 for i,v in pairs(tabs:GetChildren()) do
 	if v.ClassName == "TextButton" then
